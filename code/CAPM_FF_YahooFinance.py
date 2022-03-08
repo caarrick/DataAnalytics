@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+
 # To add a new cell, type '# %%'
 # To add a new markdown cell, type '# %% [markdown]'
 # %%
@@ -88,11 +95,56 @@ print(fullDir)
 
 
 # %%
-stkName = 'AAPL'
+stkName = 'VZ'
 fileName = 'stk_' + stkName + '.csv'
 readFile = fullDir+fileName 
 
-df_stk = pd.read_csv(readFile,index_col='Date',parse_dates=True)
+df_stk = pd.read_csv("C:\\Users\\caarrick\\datasets\\stocks\\df_stk_.csv")
+df_stk.head()
+
+
+# %%
+stkName = 'VZ'
+fileName = 'stk_' + stkName + '.csv'
+readFile = fullDir+fileName 
+
+df_stk2 = pd.read_csv("C:\\Users\\caarrick\\datasets\\stocks\\df_stk_2.csv")
+df_stk.head()
+
+
+# %%
+stkName = 'NFLX'
+fileName = 'stk_' + stkName + '.csv'
+readFile = fullDir+fileName 
+
+df_stk3 = pd.read_csv("C:\\Users\\caarrick\\datasets\\stocks\\df_stk3.csv")
+df_stk.head()
+
+
+# %%
+stkName = 'AMC'
+fileName = 'stk_' + stkName + '.csv'
+readFile = fullDir+fileName 
+
+df_stk4 = pd.read_csv("C:\\Users\\caarrick\\datasets\\stocks\\df_stk4.csv")
+df_stk.head()
+
+
+# %%
+stkName = 'NFLX'
+fileName = 'stk_' + stkName + '.csv'
+readFile = fullDir+fileName 
+
+df_stk5 = pd.read_csv("C:\\Users\\caarrick\\datasets\\stocks\\df_stk5.csv")
+df_stk.head()
+
+
+# %%
+stkName = 'AMC'
+fileName = 'stk_' + stkName + '.csv'
+readFile = fullDir+fileName 
+
+df_stk6 = pd.read_csv("C:\\Users\\caarrick\\datasets\\stocks\\df_stk6.csv")
 df_stk.head()
 
 
@@ -121,5 +173,4 @@ xlsfile=fullDir+stkName+'_CAPM_FF.xlsx'
 print(xlsfile)
 
 # %% output model
-df_regOutput.to_excel(xlsfile)
-
+df_regOutput.to_excel(
